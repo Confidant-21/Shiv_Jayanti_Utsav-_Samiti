@@ -1,0 +1,15 @@
+#Color Pallate:
+	Active Color: rgba(236,98,37,255)  
+	Active Color: 
+		#ec6225 (Orange)
+	Complementary Color: 
+		#2563ec (Blue)
+	Analogous Colors:
+		#ec9c25 (Orange-Yellow)
+		#ec2563 (Reddish-Pink)
+	Triadic Colors:
+		#25ec62 (Green)
+		#6225ec (Purple-Blue)
+	Split-Complementary Colors:
+		#25ecb5 (Blue-Green)
+		#ec9825 (Yellow-Orange)
