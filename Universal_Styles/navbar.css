@@ -8,9 +8,9 @@ a {
     font-size: 1rem;
 }
 
-a:hover {
+/* a:hover {
     color: #ec6225;
-}
+} */
 
 /* header */
 
@@ -73,7 +73,7 @@ header {
 }
 
 
-.navbar_local .links li::before {
+.navbar_local .links li a::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -85,12 +85,12 @@ header {
     border-radius: 10px;
 }
 
-.navbar_local .links li:hover a {
+.navbar_local .links li a:hover a {
     color: #ec6225;
 }
 
 
-.navbar_local .links li:hover::before {
+.navbar_local .links li a:hover::before {
     width: 100%;
 }
 
@@ -104,7 +104,7 @@ header {
 .action_btn {
     background-color: #ec6225;
     color: #fff;
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -116,22 +116,25 @@ header {
     font-weight: 600;
 }
 
-.action_btn a {
+.action_btn_gallery a {
     color: white;
     font-size: 1.2rem;
 }
 
-.action_btn:hover {
+.action_btn:hover{
+  
+
+}
+.action_btn_gallery:hover {
     scale: 1.05;
     color: #fff;
-
     a {
         color: white;
         text-decoration: none;
     }
 }
 
-.action_btn:active {
+.action_btn_gallery:active {
     scale: 0.95;
 
 }
@@ -145,19 +148,20 @@ header {
     margin: 1.5rem;
     right: 2rem;
     top: 60px;
-    height: 0px;
+    /* height: 0px; */
     width: 300px;
     background: rgba(1, 1, 1, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    z-index:10000;
 }
 
 .dropdown_menu ul li {
     /* background-color: rgb(255, 255, 255); */
 }
 
-.dropdown_menu ul li a {
+.dropdown_menu ul li a{
     color: rgb(107, 27, 18);
     font-weight: 600;
     font-size: 1.1rem;
@@ -165,7 +169,8 @@ header {
 }
 
 .dropdown_menu.open {
-    height: 255px;
+    /* height: 255px; */
+
 }
 
 .dropdown_menu ul li {
@@ -176,20 +181,19 @@ header {
 
 }
 
-.dropdown_menu ul li:hover {
-    a {
-        color: #ec6225;
-    }
-}
+
 
 .dropdown_menu .action_btn {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
-.dropdown_menu .action_btn:hover {
+.dropdown_menu ul li a:hover{ 
+     color: #ec6225; 
+}
+.dropdown_menu ul li a:hover.action_btn{
     background-color: rgb(107, 27, 18);
+   
 }
 
 
