@@ -1,20 +1,20 @@
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
 
-a:hover{
-    color: #ec6225; 
+a:hover {
+    color: #ec6225;
 }
 
 /* header */
 
-header{
+header {
     background: rgba(1, 1, 1, 0.1);
     position: relative;
     padding: 0 2rem;
@@ -22,50 +22,89 @@ header{
     border-radius: 40px;
 }
 
-.logo{
+.logo {
     height: 70px;
     width: 70px;
     overflow: hidden;
 }
 
-.logo img{
+.logo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.navbar_local{
+.navbar_local {
     width: 100%;
     height: 80px;
     max-width: 1200px;
-    margin: 0 auto ;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar_local .logo a{
+.navbar_local .logo a {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.navbar_local .links{
+.menu_list {
+    height: 40px;
+}
+
+.navbar_local .links {
     display: flex;
+    align-items: center;
     gap: 2rem;
+    height: 100%;
 
 }
 
-.navbar_local .toggle_btn{
-     color: #fff;
-     font-size: 1.5rem;
-     cursor: pointer;
-     display: none;
+.navbar_local .links li a {
+    color: rgb(107, 27, 18);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
 }
 
-.action_btn{
+.navbar_local .links li {
+    position: relative;
+}
+
+
+.navbar_local .links li::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    background-color: #ec6225;
+    transition: all .2s;
+    border-radius: 10px;
+}
+
+.navbar_local .links li:hover a {
+    color: #ec6225;
+}
+
+
+.navbar_local .links li:hover::before {
+    width: 100%;
+}
+
+.navbar_local .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
     background-color: #ec6225;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -73,14 +112,26 @@ header{
     font-weight: 500;
     cursor: pointer;
     transition: scale 0.2 ease;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.action_btn:hover{
+.action_btn a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.action_btn:hover {
     scale: 1.05;
     color: #fff;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.action_btn:active{
+.action_btn:active {
     scale: 0.95;
 
 }
@@ -88,7 +139,7 @@ header{
 
 /* dropdown menu */
 
-.dropdown_menu{
+.dropdown_menu {
     display: none;
     position: absolute;
     margin: 1.5rem;
@@ -99,61 +150,83 @@ header{
     background: rgba(1, 1, 1, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    overflow: hidden; 
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
 }
 
-.dropdown_menu.open{
+.dropdown_menu ul li {
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.dropdown_menu ul li a {
+    color: rgb(107, 27, 18);
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.dropdown_menu.open {
     height: 255px;
 }
 
-.dropdown_menu li{
+.dropdown_menu ul li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-.dropdown_menu .action_btn{
+.dropdown_menu ul li:hover {
+    a {
+        color: #ec6225;
+    }
+}
+
+.dropdown_menu .action_btn {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.dropdown_menu .action_btn:hover {
+    background-color: rgb(107, 27, 18);
 }
 
 
 
 /* responsive design */
 
-@media(max-width: 992px){
-    .navbar_local .links{
-        display: none;
-    }
-    .navbar_local .action_btn{
+@media(max-width: 992px) {
+    .navbar_local .links {
         display: none;
     }
 
-    .navbar_local .toggle_btn{
+    .navbar_local .action_btn {
+        display: none;
+    }
+
+    .navbar_local .toggle_btn {
         display: block;
     }
 
-    .dropdown_menu{
+    .dropdown_menu {
         display: block;
     }
 
-    .header{
+    .header {
         margin: 0.5rem;
     }
-} 
+}
 
 
-@media(max-width: 576px){
+@media(max-width: 576px) {
 
-    .dropdown_menu{
+    .dropdown_menu {
         left: 2rem;
         width: unset;
     }
 
-    .header{
+    .header {
         margin: 0.5rem;
     }
 }

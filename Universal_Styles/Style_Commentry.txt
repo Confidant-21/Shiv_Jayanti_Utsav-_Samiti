@@ -13,3 +13,5 @@
 	Split-Complementary Colors:
 		#25ecb5 (Blue-Green)
 		#ec9825 (Yellow-Orange)
+	logo color:
+	rgb(107, 27, 18)   brown 
