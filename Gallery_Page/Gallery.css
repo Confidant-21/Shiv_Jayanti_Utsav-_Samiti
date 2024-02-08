@@ -12,6 +12,7 @@ body{
    /* background-image:url(img/background_img_gallery.jpg); */
     background-repeat:repeat;
     background-size: contain; 
+    /* cursor: url(/Assets/Universal_Images/curser_image.png) , auto; */
 
 }
 

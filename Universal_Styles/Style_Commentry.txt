@@ -2,6 +2,7 @@
 	Active Color: rgba(236,98,37,255)  
 	Active Color: 
 		#ec6225 (Orange)
+		rgb(107, 27, 18)   (brown) 
 	Complementary Color: 
 		#2563ec (Blue)
 	Analogous Colors:
@@ -14,4 +15,6 @@
 		#25ecb5 (Blue-Green)
 		#ec9825 (Yellow-Orange)
 	logo color:
-	rgb(107, 27, 18)   brown 
+	
+
+	
