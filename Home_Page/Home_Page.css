@@ -6,8 +6,29 @@
 }
 
 body{
-    
+    cursor: url("flag.png"), auto;
     height: 100vh;
     background-color: #f8f8f8;
+    /* cursor: none; */
     /* background: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80); */
+}
+
+.cursor_img {
+    height: 30px;
+    width:30px;
+    position: relative;
+    z-index:20000;
+    /* transition-duration: 200ms;
+    transition-timing-function: ease-out; */
+}
+
+.notification_div{
+    background-color: #ec6225;
+    height:30px;
+    display: flex;
+    align-items: center;
+    padding:0px;
+    color:white;
+    font-size:20px;
+    
 }
