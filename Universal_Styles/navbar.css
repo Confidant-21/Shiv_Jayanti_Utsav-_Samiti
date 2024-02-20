@@ -169,7 +169,12 @@ header {
 }
 
 .dropdown_menu.open {
+<<<<<<< HEAD
     height: 270px;
+=======
+    /* height: 255px; */
+    height: 0px;
+>>>>>>> bc09efc870e964070302f5119ee6b2a9d0f900c9
 
 }
 
@@ -214,6 +219,7 @@ header {
     }
 
     .dropdown_menu {
+        
         display: block;
     }
 
